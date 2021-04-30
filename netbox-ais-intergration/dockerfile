@@ -1,0 +1,19 @@
+# syntax=docker/dockerfile:1
+
+FROM python:3.8-slim-buster
+
+WORKDIR /app
+
+COPY . .
+
+RUN pip3 install -r requirements.txt
+
+RUN pip install ./aos-api-python/.
+
+RUN rm -R ./aos-api-python
+
+RUN rm dockerfile
+
+RUN rm requirements.txt
+
+ENTRYPOINT ["python3", "netboxTest.py", "-f"]

@@ -1,0 +1,10 @@
+netbox:
+    token: "83b6d00a55ee5bc5041e65f95a86228dda96e7c7"
+    hostname: "192.168.20.43"
+    port: "8000"
+ais:
+  host: "66.129.235.4"
+  port: "36005"
+  protocol: "https"
+  username: "admin"
+  password: "admin"
