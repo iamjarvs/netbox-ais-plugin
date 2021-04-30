@@ -3,7 +3,7 @@ import os
 from invoke import task
 
 PYTHON_VER = os.getenv("PYTHON_VER", "3.7")
-NETBOX_VER = os.getenv("NETBOX_VER", "master")
+NETBOX_VER = os.getenv("NETBOX_VER", "v2.10.8")
 
 # Name of the docker image/container
 NAME = os.getenv("IMAGE_NAME", "aisplugin")
